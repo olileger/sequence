@@ -1,0 +1,661 @@
+format 223
+"bouml-project"
+  revision 1
+  modified_by 2 "olileger"
+
+
+  
+  // class settings
+  default_attribute_visibility private default_relation_visibility private default_operation_visibility public
+  
+  classdiagramsettings draw_all_relations yes hide_attributes no hide_operations no hide_getset_operations no hide_ports no show_members_full_definition no show_members_visibility no show_members_stereotype no show_members_context no show_members_multiplicity no show_members_initialization no show_attribute_modifiers no member_max_width 127 show_parameter_dir yes show_parameter_name yes package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes show_relation_modifiers no show_relation_visibility no show_infonote no shadow yes gradient none show_stereotype_properties no end
+  
+  classcompositediagramsettings auto_label_position yes draw_all_relations yes shadow yes gradient none end
+  
+  usecasediagramsettings package_name_in_tab no show_context_mode no auto_label_position yes draw_all_relations yes class_drawing_mode actor shadow yes gradient none show_stereotype_properties no end
+  
+  sequencediagramsettings show_full_operations_definition no show_class_of_operation no write_horizontally yes instances_drawing_mode natural drawing_language uml draw_all_relations yes shadow yes gradient none show_stereotype_properties no show_class_context_mode no show_msg_context_mode no end
+  
+  collaborationdiagramsettings show_full_operations_definition no show_class_of_operation no show_hierarchical_rank no write_horizontally yes instances_drawing_mode natural drawing_language uml package_name_in_tab no show_class_pack_context_mode no show_msg_context_mode no draw_all_relations yes shadow yes gradient none show_stereotype_properties no end
+  
+  objectdiagramsettings write_horizontally yes package_name_in_tab no show_class_pack_context_mode no auto_label_position yes draw_all_relations yes shadow yes gradient none show_stereotype_properties no end
+  
+  objectcompositediagramsettings auto_label_position yes draw_all_relations yes shadow yes gradient none end
+  
+  componentdiagramsettings package_name_in_tab no show_context_mode no auto_label_position yes draw_all_relations yes shadow yes gradient none
+   draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no end
+  
+  deploymentdiagramsettings package_name_in_tab no show_context_mode no write_horizontally yes auto_label_position yes draw_all_relations yes shadow yes gradient none
+   draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no end
+  
+  statediagramsettings package_name_in_tab no show_context_mode no auto_label_position yes write_label_horizontally yes show_trans_definition no draw_all_relations yes shadow yes gradient none
+   show_activities yes region_horizontally yes drawing_language uml show_stereotype_properties no end
+  
+  activitydiagramsettings package_name_in_tab no show_context_mode no show_opaque_action_definition no auto_label_position yes write_label_horizontally no draw_all_relations yes shadow yes gradient none
+   show_infonote yes drawing_language uml show_stereotype_properties no end
+  
+  class_color yellow duration_color transparent continuation_color gray note_color blue fragment_color transparent subject_color transparent usecase_color yellow package_color transparent component_color green artifact_color green deploymentnode_color gray state_color yellow stateaction_color transparent activity_color transparent activityregion_color transparent activitypartition_color transparent activityaction_color transparent parameterpin_color white generalization_color black 
+  dpi 96
+  font_size 8
+  diagram_format A4
+
+  image_root_dir ""
+
+
+  mark_for_import
+  
+  usecaseview 128002 "use case"
+    
+    usecasediagramsettings end
+    
+    sequencediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    activitydiagramsettings
+     end
+    usecasediagram 128002 "overview"
+      usecasediagramsettings end
+      size A4
+    end
+
+    class 128002 "User"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    usecase 128002 "shape"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 128130 "delete"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128002
+	-_->
+	  on usecase_ref 128002 // shape
+      end
+    end
+
+    usecase 128258 "login"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 128386 "logout"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128130
+	-_->
+	  on usecase_ref 128258 // login
+      end
+    end
+
+    usecase 128514 "run"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 128642 "trigger"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 128258
+	-_->
+	  on usecase_ref 128514 // run
+      end
+    end
+
+    class 128130 "ThirdParties"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 128258 "IdentityProviders"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+  end
+
+  classview 128002 "entities"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    classdiagram 128130 "class"
+      classdiagramsettings draw_all_relations no show_members_multiplicity yes member_max_width 0 end
+      size A4
+    end
+
+    collaborationdiagram 128258 "dynamic relationship"
+      collaborationdiagramsettings end
+      size A4
+    end
+
+    objectdiagram 128514 "actor model"
+      objectdiagramsettings end
+      size A4
+    end
+
+    class 128386 "Sequence"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128002 // <directional composition>
+	relation 128002 *-->
+	  a role_name "" private
+	    classrelation_ref 128002 // <directional composition>
+	  b parent class_ref 128514 // Action
+      end
+    end
+
+    class 128514 "Action"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 128642 "CodeMapping"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128130 // <generalisation>
+	relation 128130 ---|>
+	  a public
+	    classrelation_ref 128130 // <generalisation>
+	  b parent class_ref 128514 // Action
+      end
+    end
+
+    class 128770 "Execute"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128258 // <generalisation>
+	relation 128258 ---|>
+	  a public
+	    classrelation_ref 128258 // <generalisation>
+	  b parent class_ref 128514 // Action
+      end
+    end
+
+    class 128898 "Listenner"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128386 // <generalisation>
+	relation 128386 ---|>
+	  a public
+	    classrelation_ref 128386 // <generalisation>
+	  b parent class_ref 128514 // Action
+      end
+    end
+
+    class 129026 "HTTPIn"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128514 // <generalisation>
+	relation 128514 ---|>
+	  a public
+	    classrelation_ref 128514 // <generalisation>
+	  b parent class_ref 128898 // Listenner
+      end
+    end
+
+    class 129154 "Controle"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128898 // <generalisation>
+	relation 128898 ---|>
+	  a public
+	    classrelation_ref 128898 // <generalisation>
+	  b parent class_ref 128642 // CodeMapping
+      end
+
+      classrelation 129282 // <composition>
+	relation 129282 *---
+	  a role_name "" private
+	    classrelation_ref 129282 // <composition>
+	  b role_name "" private
+	    classrelation_ref 129410 // <composition>
+      end
+    end
+
+    class 129282 "If"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128642 // <generalisation>
+	relation 128642 ---|>
+	  a public
+	    classrelation_ref 128642 // <generalisation>
+	  b parent class_ref 129154 // Controle
+      end
+
+      classrelation 129538 // <composition>
+	relation 129410 *---
+	  a role_name "" private
+	    classrelation_ref 129538 // <composition>
+	  b role_name "" private
+	    classrelation_ref 129666 // <composition>
+      end
+
+      classrelation 130818 // <composition>
+	relation 130178 *---
+	  a role_name "" private
+	    classrelation_ref 130818 // <composition>
+	  b role_name "" private
+	    classrelation_ref 130946 // <composition>
+      end
+    end
+
+    class 129410 "Switch"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128770 // <generalisation>
+	relation 128770 ---|>
+	  a public
+	    classrelation_ref 128770 // <generalisation>
+	  b parent class_ref 129154 // Controle
+      end
+
+      classrelation 129794 // <composition>
+	relation 129538 *---
+	  a role_name "" private
+	    classrelation_ref 129794 // <composition>
+	  b role_name "" private
+	    classrelation_ref 129922 // <composition>
+      end
+
+      classrelation 131330 // <composition>
+	relation 130434 *---
+	  a role_name "" private
+	    classrelation_ref 131330 // <composition>
+	  b role_name "" private
+	    classrelation_ref 131458 // <composition>
+      end
+    end
+
+    class 129538 "Loop"
+      abstract visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129026 // <generalisation>
+	relation 129026 ---|>
+	  a public
+	    classrelation_ref 129026 // <generalisation>
+	  b parent class_ref 128642 // CodeMapping
+      end
+    end
+
+    class 129666 "While"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129154 // <generalisation>
+	relation 129154 ---|>
+	  a public
+	    classrelation_ref 129154 // <generalisation>
+	  b parent class_ref 129538 // Loop
+      end
+
+      classrelation 130050 // <composition>
+	relation 129666 *---
+	  a role_name "" private
+	    classrelation_ref 130050 // <composition>
+	  b role_name "" private
+	    classrelation_ref 130178 // <composition>
+      end
+
+      classrelation 131074 // <composition>
+	relation 130306 *---
+	  a role_name "" private
+	    classrelation_ref 131074 // <composition>
+	  b role_name "" private
+	    classrelation_ref 131202 // <composition>
+      end
+    end
+
+    class 129794 "condition"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129410 // <composition>
+	relation_ref 129282 // <composition>
+      end
+
+      classrelation 129666 // <composition>
+	relation_ref 129410 // <composition>
+      end
+
+      classrelation 129922 // <composition>
+	relation_ref 129538 // <composition>
+      end
+
+      classrelation 130178 // <composition>
+	relation_ref 129666 // <composition>
+      end
+
+      classrelation 130690 // <composition>
+	relation_ref 130050 // <composition>
+      end
+    end
+
+    class 129922 "HTTPRequest"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 130306 // <generalisation>
+	relation 129794 ---|>
+	  a public
+	    classrelation_ref 130306 // <generalisation>
+	  b parent class_ref 128770 // Execute
+      end
+    end
+
+    class 130050 "SetVariable"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 130434 // <generalisation>
+	relation 129922 ---|>
+	  a public
+	    classrelation_ref 130434 // <generalisation>
+	  b parent class_ref 128770 // Execute
+      end
+
+      classrelation 131586 // <dependency>
+	relation 130562 -_->
+	  a public
+	    classrelation_ref 131586 // <dependency>
+	  b parent class_ref 130306 // VariableCollection
+      end
+    end
+
+    class 130178 "ConditionCollection"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 130562 // <composition>
+	relation 130050 *---
+	  a role_name "" private
+	    classrelation_ref 130562 // <composition>
+	  b role_name "" private
+	    classrelation_ref 130690 // <composition>
+      end
+
+      classrelation 130946 // <composition>
+	relation_ref 130178 // <composition>
+      end
+
+      classrelation 131202 // <composition>
+	relation_ref 130306 // <composition>
+      end
+
+      classrelation 131458 // <composition>
+	relation_ref 130434 // <composition>
+      end
+    end
+
+    class 130306 "VariableCollection"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+  end
+
+end
