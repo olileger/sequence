@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-23T18:45:37.691Z" agent="5.0 (Windows)" etag="YPUCF72KZD-DdhDsirgt" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-23T18:51:02.963Z" agent="5.0 (Windows)" etag="y3nnauB2gmVJk2Mow0PL" version="20.6.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2175" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2175" dy="1494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -224,6 +224,37 @@
           <mxGeometry x="0.8895" y="4" relative="1" as="geometry">
             <mxPoint x="-5" y="-3" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="GUMPVwp6jt3l8_LeHuC3-76" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InlineVariable&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="890" y="1120" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GUMPVwp6jt3l8_LeHuC3-77" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.956;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.463;exitY=-0.057;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GUMPVwp6jt3l8_LeHuC3-76" target="GUMPVwp6jt3l8_LeHuC3-30">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="1260" as="sourcePoint" />
+            <mxPoint x="710" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUMPVwp6jt3l8_LeHuC3-78" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;br&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="-150" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GUMPVwp6jt3l8_LeHuC3-79" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="GUMPVwp6jt3l8_LeHuC3-7" target="GUMPVwp6jt3l8_LeHuC3-78">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" as="sourcePoint" />
+            <mxPoint x="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUMPVwp6jt3l8_LeHuC3-81" value="elements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GUMPVwp6jt3l8_LeHuC3-79">
+          <mxGeometry x="0.3176" y="-7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUMPVwp6jt3l8_LeHuC3-82" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GUMPVwp6jt3l8_LeHuC3-79">
+          <mxGeometry x="0.0901" y="-8" relative="1" as="geometry">
+            <mxPoint x="103" y="65" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GUMPVwp6jt3l8_LeHuC3-80" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;InlineVariable&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1080" y="1120" width="160" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
