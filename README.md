@@ -10,3 +10,7 @@ This code is then run on local computer or in the cloud - I may provide this run
 It's also intented to provide a connectors store to allow build complex scenarios between applications. Supported protocol will be HTTPS of type application/json.
 
 I want it to be as fast as possible then I'll try to avoid uneeded compilation, packing, containerizing and all that stuff. That's why a direct mapping action-to-code will help.
+
+
+## Features Backlog
+- generation séquence depuis language naturel
